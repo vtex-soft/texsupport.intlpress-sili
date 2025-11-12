@@ -1,4 +1,4 @@
-# LaTeX author support for the International Press book edited by Si Li (*SILI*)
+# International Press book SILI author support
 
 ## Table of Contents
 
