@@ -19,7 +19,7 @@ book *SILI*.
 The following files are given in the repository (or directly in `*.zip` archive):
 
 * `sili.cls` - LaTeX style file designed for International Press book.
-  Please do not change it. These file is already loaded in the respective template files;
+  Please do not change it. This file is already loaded in the respective template files;
 * `sili-template.tex` - topmatter template (should be used for book preparation);
 * `sili-sample.tex` - sample book;
 * `sili-sample.pdf` - sample book (`PDF` file);
