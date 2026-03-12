@@ -2,7 +2,7 @@
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/06/01]
 \ProvidesClass{sili}
-    [2025/11/11 v1.01, driver class for SILI book]
+    [2026/03/10 v1.04, driver class for SILI book]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \PassOptionsToClass{a4paper,10pt,amsthm,amsmath,twoside}{report}
@@ -17,8 +17,13 @@
 \DeclareSymbolFont{symbols}{OMS}{cmsy}{m}{n}
 \DeclareSymbolFont{largesymbols}{OMX}{cmex}{m}{n}
 
-%\InputIfFileExists{pagecrop.sty}{}{}
-\IfFileExists{pagecrop.sty}{\RequirePackage{pagecrop}}{}
+\IfFileExists{vtexoutputpage.sty}{%
+  \RequirePackage{vtexoutputpage}%
+  \appto\HPROOF{\NOSETGRID}%
+  \voffset=-1in%
+  \hoffset=-1in%
+  }{}
+\IfFileExists{ecrcsetup.sty}{\RequirePackage{ecrcsetup}}{}
 
 \RequirePackage{amssymb}
 \RequirePackage{amsmath}
@@ -27,27 +32,17 @@
 \RequirePackage{tcolorbox}
 \RequirePackage{color}
 \RequirePackage{etoolbox}
+
 \RequirePackage{hyperref}
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+  }
 
 \def\startlocaldefs{\makeatletter}
 \def\endlocaldefs{\makeatother}
-
-\def\set@crop@page#1#2%
-{%
-  \gdef\@crop@page@wd{#1}%
-  \gdef\@crop@page@ht{#2}%
-  % skaiciuojam ploti:
-  \gdef\crop@width{#1}%
-  % skaiciuojam auksti
-  \@tempdima=#2%
-  \advance\@tempdima by-\topmargin%
-  \advance\@tempdima by-\headheight%
-  \advance\@tempdima by-\headsep%
-  \advance\@tempdima by-\textheight%
-  \xdef\the@bottom@margin{\the\@tempdima}%
-  \advance\@tempdima by-#2               % DG/2006.10.27
-  \xdef\the@top@margin{-\the\@tempdima}  % DG/2006.10.27
-}
 
 \addtolength{\textheight}{-2cm}
 \addtolength{\textwidth}{1cm}
@@ -72,9 +67,7 @@
 \setlength\headsep{20.7pt}
 
 % Papersize special
-\AtBeginDvi{\special{papersize=\the\paperwidth,\the\paperheight}}
-
-\set@crop@page{\trimwidth}{\trimheight}
+\special{papersize=\the\trimwidth,\the\trimheight}
 
 \def\address#1{\gdef\@address{#1}}
 \renewcommand\maketitle{%
