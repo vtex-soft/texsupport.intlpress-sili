@@ -1,4 +1,4 @@
-# International Press BLN author support
+# BIMSA Lecture Notes (BLN) author support
 
 ## Table of Contents
 
@@ -11,8 +11,7 @@
 
 ## About
 
-Author support service provides LaTeX style files and `*.tex` file templates designed for International Press 
-*BLN*.
+Author support service provides LaTeX style files and `*.tex` file templates designed for BIMSA Lecture Notes (*BLN*).
 
 ## Package content
 
