@@ -1,4 +1,4 @@
-# LaTeX author support for the International Press book edited by Si Li (*SILI*)
+# LaTeX author support for BIMSA Lecture Notes (*BLN*)
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 ## About
 
 Author support service provides LaTeX style files and `*.tex` file templates designed for International Press 
-book *SILI*.
+*BLN*.
 
 ## Package content
 
