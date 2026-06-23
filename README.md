@@ -1,4 +1,4 @@
-# International Press book SILI author support
+# International Press BLN author support
 
 ## Table of Contents
 
@@ -12,7 +12,7 @@
 ## About
 
 Author support service provides LaTeX style files and `*.tex` file templates designed for International Press 
-book *SILI*.
+*BLN*.
 
 ## Package content
 
