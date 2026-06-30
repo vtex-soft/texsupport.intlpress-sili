@@ -1,8 +1,8 @@
-%% This is file `sili.cls'
+%% This is file `bln.cls'
 %%
 \NeedsTeXFormat{LaTeX2e}[1995/06/01]
-\ProvidesClass{sili}
-    [2026/03/10 v1.04, driver class for SILI book]
+\ProvidesClass{bln}
+    [2026/03/10 v1.04, driver class for BIMSA Lecture Notes (BLN)]
 
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
 \PassOptionsToClass{a4paper,10pt,amsthm,amsmath,twoside}{report}
@@ -124,4 +124,4 @@
 
 \endinput
 %%
-%% End of file `ipbook.cls'.
+%% End of file `bln.cls'.

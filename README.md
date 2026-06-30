@@ -5,7 +5,7 @@
 * [About](#about)
 * [Package content](#package-content)
 * [Setup](#setup)
-* [Recomended usage of `sili` package](#recomended-usage-of-sili-package)
+* [Recomended usage of `bln` package](#recomended-usage-of-bln-package)
 * [Submission](#submission)
 * [Bug reports](#bug-reports)
 
@@ -17,28 +17,28 @@ Author support service provides LaTeX style files and `*.tex` file templates des
 
 The following files are given in the repository (or directly in `*.zip` archive):
 
-* `sili.cls` - LaTeX style file designed for International Press book.
+* `bln.cls` - LaTeX style file designed for International Press book.
   Please do not change it. This file is already loaded in the respective template files;
-* `sili-template.tex` - topmatter template (should be used for book preparation);
-* `sili-sample.tex` - sample book;
-* `sili-sample.pdf` - sample book (`PDF` file);
+* `bln-template.tex` - topmatter template (should be used for book preparation);
+* `bln-sample.tex` - sample book;
+* `bln-sample.pdf` - sample book (`PDF` file);
 
 ## Setup
 * Clone the repository or download the `*.zip` archive. Rename the package to `<your-project-name>`.
-* Install `sili.cls` in your TeX system.
-* Use the file `sili-template.tex` to start your book as a template.
-* Use the file `sili-sample.tex` as a reference for how to prepare a topmatter of your book.
+* Install `bln.cls` in your TeX system.
+* Use the file `bln-template.tex` to start your book as a template.
+* Use the file `bln-sample.tex` as a reference for how to prepare a topmatter of your book.
 
-## Recommended usage of `sili` package
+## Recommended usage of `bln` package
 
-Use `sili-template.tex` as a template.
+Use `bln-template.tex` as a template.
 
 ### LaTeX document preamble content
 
 The preamble of your LaTeX document should look like this:
 
 ```latex
-\documentclass{sili}
+\documentclass{bln}
 
 \title{Book title}
 \author{Firstname Surname}
@@ -76,4 +76,4 @@ Pack your root folder `<your-project-name>` with files and subfolders.
 ## Bug reports
 
 Please submit bug report or feature requests at
-[github](https://github.com/vtex-soft/texsupport.intlpress-sili/issues) page.
+[github](https://github.com/vtex-soft/texsupport.intlpress-bln/issues) page.
